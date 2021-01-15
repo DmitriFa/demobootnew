@@ -8,7 +8,7 @@ public interface UserRepository extends JpaRepository<User, Long> {
 
     User findByLastName(String lastName);
 
-    boolean existsDistinctByLastName(String lastname);
+    boolean existsByLastName(String lastName);
 
 
 

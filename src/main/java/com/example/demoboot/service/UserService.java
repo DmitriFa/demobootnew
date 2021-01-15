@@ -67,8 +67,7 @@ public class UserService {
 
 
     public boolean checkLastName(String lastName)  {
-        return userRepository.existsDistinctByLastName(lastName);
+        return !userRepository.existsByLastName(lastName);
     }
-
 }
 
